@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body.theme-light {
+    background-color: #fff;
+    color: #333;
+}
+
+body.theme-dark {
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+body.theme-dark .Detalles-juego{ 
+    background-color: #272275;
+
+}
+
+body.theme-dark .Detalles-juego a:hover{
+    color:#fff
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+.BarraInicial{
+    background-color: #1b174e;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+#themeToggle{
+    float: right;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333; /* Cambia el color según sea necesario */
+    
+}
+
+.BarraNav nav ul {
+    padding: 15px 0px;
+    padding-left: 15px;
+    display: flex;
+    list-style: none; /* Agregamos esto para quitar los puntos */
+}
+
+li a{
+    margin-left: 5px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover{
+    text-decoration: none;
+    color: #36c2c7;
+}
+
+#search{
+    border-radius: 5px;
+    width: 50%;
+    margin-right: 10px;
+    padding-left: 15px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+
+#searchButton{
+
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Logo{
+    margin-left: 35px;
+    float: left;
+    height: 45px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+
+
+
+/* Contenido Principal */
+
+
+.Contenido-principal {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenido-principal .titulo-lista{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.Contenedor-juego{
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.Contenedor-juego h2{
+    font-size:20px;
+    width: 300px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.Contenedor-juego img{
+    width: 320px;
+    height: 220px;
+}
+
+
+/* Añade estilos para la información adicional */
+.Detalles-juego {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: -20px; /* Ajusta la posición para que salga por encima del juego */
+    left: 0;
+    width: 89%;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+.Contenedor-juego:hover .Detalles-juego {
+    display: block;
+}
+
+.Detalles-juego a {
+
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.Detalles-juego a:hover{
+    color: #9117c9;
+    text-decoration: underline;
+}
+
+
+.Contenedor-juego:hover {
+    cursor: pointer;
+}
+
+
+/* Formulario / Comentarios */
+
+.Comentarios{
+    background-color: #1b174e;
+    width: 100%;
+    text-align: center;
+    padding-top:20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+
+}
+
+.Comentarios #form-comentarios .formulario{
+    margin-bottom: 20px;
+}
+
+
+.Comentarios #form-comentarios .formulario #comentario{
+    border-radius: 5px;
+    width: 80%;
+    padding-left: 10px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+
+.Comentarios #form-comentarios .formulario .boton{
+    border: none;
+    border-radius: 5px;
+    width: 65px;
+    height: 30px;
+    font-weight: bold;
+    background-color: #007BFF;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* Estilos para el botón de eliminar */
+
+button {
+    background-color: #ff6347; 
+    color: #fff;
+    padding: 8px 12px; 
+    border: none;
+    cursor: pointer; 
+}
+
+
+button:hover {
+    background-color: #d9534f; 
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: #280e3b;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+    
+
+}
+
+.footer-content-1{
+    display: inline-flex;
+    align-items: center;
+}
+
+.Logo-foto{
+    width: 50%;
+    display: inline-block;
+
+}
+
+
+.Logo-footer{
+    margin-left: 30px;
+    border-radius: 20px;
+    height: 60px;
+    width: 75px;
+}
+
+.footer-content-1 .Nombre-footer{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-content-1 span{
+
+    color: #36c2c7;
+}
+
+.Redes-sociales{
+    width: 50%;
+}
+
+.Discord{
+    margin-top: 15px;
+    height: 55px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+
+nav input, .Menú-Responsivo{
+    display: none;
+}
+
+
+@media screen and (max-width:750px){
+
+    #search{
+        width: 40%;
+    }
+
+    .Logo{
+        width: 70px;
+        height: 45px;
+    }
+
+    .BarraNav{
+        font-size: 15px;
+    }
+
+    .Contenedor-juego h2{
+        width: 280px;
+    }
+
+    .Contenedor-juego img{
+        width: 280px;
+        height: 200px;
+    }
+
+    .Comentarios #form-comentarios .formulario #comentario{
+        width: 60%;
+    }
+
+    .footer-content-1 .Nombre-footer{
+        font-size: 25px;
+    }
+
+    .Redes-sociales h3{
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:645px){
+
+    .Logo{
+        width: 70px;
+        height: 45px;
+    }
+
+    .BarraNav{
+        font-size: 13px;
+    }
+
+    #themeToggle{
+        font-size: 25px;
+    }
+
+    .footer-content-1 img{
+        height: 50px;
+        width: 60px;
+    }
+
+    .Contenido-principal .titulo-lista{
+        font-size: 18px;
+    }
+
+    .Contenedor-juego{
+        margin-left: 5px;
+        margin-right: 5px;
+
+    }
+
+    .Contenedor-juego h2{
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .Contenedor-juego img{
+        width: 210px;
+        height: 200px;
+    }
+
+    .Comentarios span{
+        font-size: 14px;
+        
+        padding: -15px;
+        
+    }
+
+
+    .footer-content-1 .Nombre-footer{
+        font-size: 20px;
+    }
+
+    .Redes-sociales h3{
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .Discord{
+        height: 50px;
+        width: 60px;
+    }
+}

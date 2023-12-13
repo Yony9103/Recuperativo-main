@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ayuda.css">
+    <title>Ayuda - Tu Nombre de Página</title>
+
+</head>
+
+<body class="theme-light">
+
+    <header>
+
+        <section class="BarraInicial">
+
+            <a href="/"><img class="Logo" src="../img/5091fe36484049.59e62d26b9062.jpg" alt="logo"></a>
+
+            <button id="themeToggle" aria-label="Cambiar Tema" class="sun-theme">🌞🌙</button>
+
+    </section>
+    
+    <script src="./js/estilos.js"></script>
+
+
+        <section class="BarraAyuda">
+
+            <div class="Ayuda-titulo">
+        
+                <h1>Ayuda</h1>
+        
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="explicacion-creacion">
+            <h1>Creación de la Página</h1>
+            
+            <p>
+                Bienvenido/a a la Página Recuperativo. Esta página fue creada con el propósito de remediar los 
+                errores de irresponsabilidad por parte del autor. Esta página es un simple ejemplo de 
+                listado de juegos con muestra de detalles de cada juego de manera individual.
+            </p>
+
+            <p>
+                Para llevar a cabo la creación de esta página, se utilizaron tecnologías web como HTML, CSS y 
+                JavaScript por medio de la aplicación Visual Studio Code, haciendo total uso de una de sus extensiones 
+                llamada Code Runner. Además, se implementó Webpack para facilitar la gestión y optimización de los 
+                recursos del sitio. Utiliza manipulación del DOM en 4 de sus 5 archivos de formato JavaScript 
+                principalmente en las funciones. Registra Comentarios en la página principal, mostrando tanto el
+                texto, fecha y hora exactos del ingreso del comentario; por su parte los comentarios son guardados
+                en el LocalStorage del navegador; de la misma manera sucede con el cambio de tema, siempre que se haga
+                un cambio en los temas; se quedaran almacenados en el LocalStorage para no reinciarse a un standar
+                o al pasar a otra de las páginas.
+            </p>
+        </section>
+
+        <section class="uso-pagina">
+
+            <h1 class="Inicio-explicacion">Uso de la Página</h1>
+
+            <div class="Index-contenido">
+
+                <h1>Index</h1>
+
+                <h2>1- Barras</h2>
+
+                <p>
+                    Para el caso del Index, se encuentran 2 Barras para el inicio: Una para la Barra de Búsqueda, 
+                    Logo y Cambio de Temas. La otra se escarga de la Navegación por la página y algunos eventos.    
+                </p>
+                <p>
+                    Dentro del Código ambas Barras tienen una clase "BarraInicial" para la Barra de Búsqueda, 
+                    Logo y Cambio de Temas; y "BarraNav" para la Navegación por la página.
+                </p>
+
+                <h3>Barra Inicial (BarraInicial):</h3>
+                <p>
+                    Contiene el logo, un campo de búsqueda, un botón de búsqueda y un botón para cambiar el tema.
+                </p> 
+
+                <ul>
+                    <li><p>Logo: Al presionar sobre el logo, este lleva al enlace de la página principal. Es decir un "Inicio".</p></li>
+                    <li><p>
+                        Campo de Búsqueda: Ingresa el nombre del Juego que deseas buscar y presiona la tecla 'Enter' para iniciar la búsqueda.
+                        Si no se escribe nada y se presiona la tecla 'Enter' igualmente, se mostraran los resultados predeterminados. 
+                    </p></li>
+                    <li><p>Botón de Búsqueda: Segunda opción por si no se presiona la tecla 'Enter' en el campo de búsqueda, al hacer click sobre el botón inicia la búsqueda.</p></li>
+                    <li><p>Botón de Cambiar Tema: Alterna entre temas claro y oscuro con solo presionar el sol o la luna.</p></li>
+
+                </ul>
+
+                <h3>Barra de Navegación (BarraNav):</h3>
+
+                <p>Menú de navegación con enlaces a diferentes secciones con solo hacer click sobre ellas.</p>
+
+                <h2>2- Contenido Principal:</h2>
+
+                <p>
+                    Contiene la lista de juegos que se cargan dinámicamente con JavaScript.
+                </p>
+
+                <p>
+                    En este caso, dependera de las acciones del usuario a la hora de mostrar los juegos;
+                    ya que en este apartado es donde se muestran los resultados de búsqueda. Pero siempre al iniciar 
+                    la página se mostraran unos juegos predeterminados.
+                </p>
+
+                <p>
+                    Por otro lado, si el usuario desliza el mouse sobre alguno de los juegos que se muestran,
+                    habran algunas acciones nuevas y tendra la opción de ver mas detalles del juego con solo hacer
+                    click en el botón de "Ver más" lo cuál lo llevara a otra página. Para dejar de ver estos detalles, 
+                    simplemente arrastra el mouse fuera del titulo o la imagen del juego.
+                </p>
+
+                <h2>3- Comentarios:</h2>
+
+                <p>
+                    En esta parte se encuentra un formulario de comentarios, mediante el cual se puede ingresar
+                    un texto cualquiera y al presionar la tecla 'Enter' o el botón 'Enviar'. Se mostrará por pantalla
+                    el texto, la hora y un boton de eliminar. Al presionar el botón 'Eliminar', se enviará un confirm
+                    para aceptar que estamos de acuerdo en borrar el comentario.
+                </p>
+
+                <p>
+                    Un punto a tener en cuenta es que los comentarios que se hayan ingresado, quedarán guardados 
+                    en el LocalStorage de tu Navegador.
+                </p>
+
+                <h2>4- Pie de Página (Footer):</h2>
+                
+                <p>Contiene información adicional o enlaces; ejecutara sus acciones al hacer click sobre ellos.</p>
+            
+            </div>
+
+            <h1>Detalles del Juego</h1>
+            <p>
+                En este caso la página simplemente mostrará más detalles del juego que seleccione el usuario;
+                contará con la misma BarraInicial y una Barra nueva con un Título de "Detalles del juego".
+            </p>
+
+            <p>
+                La interacción nueva en esta página será un botón de volver que hace la misma función que 
+                el logo de la BarraInicial; al hacer click sobre el lleva al index del código con los datos stock.
+            </p>
+
+
+        </section>
+
+        <a href="Index.html"><button class="Volver">Volver</button></a>
+
+    </main>
+
+    <footer>
+        <!-- Puedes incluir el pie de página de tu página aquí -->
+        <!-- Por ejemplo, información de contacto, enlaces adicionales, etc. -->
+    </footer>
+
+
+</body>
+
+</html>

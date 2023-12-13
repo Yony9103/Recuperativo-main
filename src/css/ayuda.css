@@ -1,0 +1,96 @@
+/* estilos-detalle.css */
+
+* {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body p{
+    line-height:25px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+
+}
+
+.BarraInicial{
+    background-color: #1b174e;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.BarraAyuda{
+    padding-bottom: 10px;
+}
+
+.Logo{
+    margin-left: 35px;
+    float: left;
+    height: 45px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+body.theme-light {
+    background-color: #fff;
+    color: #333;
+}
+
+body.theme-dark {
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+#themeToggle{
+    float: right;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #333; /* Cambia el color según sea necesario */
+    
+}
+
+main {
+    padding: 20px;
+}
+
+.Inicio-explicacion{
+    padding-top: 15px;
+}
+
+.uso-pagina h1{
+    text-align: center;
+}
+
+.uso-pagina h2,
+.explicacion-creacion h2 {
+    padding-left: 40px;
+}
+
+
+.Volver {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.Volver:hover {
+    background-color: #0056b3;
+}
